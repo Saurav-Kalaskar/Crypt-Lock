@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypt-Lock Security Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Welcome to Crypt-Lock</h1>
+    <p>Check if your data and payments are secure!</p>
+
+    <!-- Encryption Section -->
+    <div id="encryption-section">
+        <h2>Encrypt Data</h2>
+        <input type="text" id="dataToEncrypt" placeholder="Enter data to encrypt">
+        <button onclick="encryptData()">Encrypt</button>
+        <p id="encryptionResult"></p>
+    </div>
+
+    <!-- Authentication Section -->
+    <div id="auth-section">
+        <h2>User Authentication</h2>
+        <input type="text" id="userId" placeholder="User ID">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="authenticateUser()">Authenticate</button>
+        <p id="authResult"></p>
+    </div>
+
+    <!-- Payment Section -->
+    <div id="payment-section">
+        <h2>Process Payment</h2>
+        <input type="number" id="amount" placeholder="Amount">
+        <input type="text" id="cardNumber" placeholder="Card Number">
+        <input type="text" id="expiryDate" placeholder="Expiry Date (MM/YY)">
+        <input type="text" id="cvv" placeholder="CVV">
+        <button onclick="processPayment()">Pay</button>
+        <p id="paymentResult"></p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
