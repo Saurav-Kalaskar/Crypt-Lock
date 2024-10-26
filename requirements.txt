@@ -2,3 +2,4 @@ Flask
 cryptography
 flask_jwt_extended
 prometheus_client
+python-dotenv
