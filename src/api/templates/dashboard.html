@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypt-Lock Security Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Crypt-Lock Monitoring Dashboard</h1>
+    <section id="metrics-section">
+        <h2>Real-Time Metrics</h2>
+        <div id="metrics">
+            <p>CPU Usage: <span id="cpu-usage">--</span>%</p>
+            <p>Memory Usage: <span id="memory-usage">--</span>%</p>
+            <p>Request Count: <span id="request-count">--</span></p>
+        </div>
+        <button onclick="fetchMetrics()">Refresh Metrics</button>
+    </section>
+    
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

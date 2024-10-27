@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -28,10 +29,59 @@ button:hover {
     background-color: #45a049;
 }
 
-#encryption-section, #auth-section, #payment-section {
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#metrics-section {
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     width: 300px;
     text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#metrics p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+
+/* Section Styling */
+#encryption-section, #auth-section, #payment-section,
+#fraud-detection-section, #ddos-protection-section,
+#api-security-section, #monitoring-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+    text-align: center;
+}
+
+/* Result Styling */
+p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
 }
